@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hello world</title>
+    <title>웹프로그래밍 데모</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -12,20 +13,66 @@
     <nav class="navbar">
       <div class="container">
         <div class="logo">WebDemo</div>
+
+        <!-- 네비게이션 요소 -->
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="project.html">Project</a>
+          </li>
+        </ul>
       </div>
-      <!-- 네비게이션 요소 -->
-      <ul class="nav">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
     </nav>
-    <!-- 메인 섹션 -->
+    <!-- main section -->
+    <section class="main">
+      <div class="container">
+        <h1>Hello, Web Programming.</h1>
+
+        <h3>
+          웹개발에 도움이 되는 사이트 :
+          <a href="https://www.w3schools.com"> W3Schools 바로가기 </a>
+          <a href="https://developer.mozilla.org/ko/">MDN</a>
+        </h3>
+
+        <p>
+          웹프로그래밍의 3가지 요소:
+          <a href="https://www.w3schools.com/html/default.asp">HTML5</a>
+          <a href="https://www.w3schools.com/css/default.asp">CSS3</a>
+          <a href="https://www.w3schools.com/js/default.asp">Javascript</a>
+        </p>
+
+        <p>현재시간 : <span id="time"></span></p>
+      </div>
+      <hr />
+      <!-- second section -->
+      <p>
+        Thema :
+        <button onclick="basic()">basic</button>
+        <button onclick="sea()">sea</button>
+        <button onclick="forest()">forest</button>
+      </p>
+      <p>
+        배워봅시다:
+        <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
+        <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
+        <button onmouseover="showjs()" onmouseout="hide()">JavaScript</button>
+      </p>
+      <hr />
+      <br />
+      <!-- <img src="/image/html5.jpg" alt=""> 이렇게 진행 안할 것이다.-->
+      <img id="fig" height="200px" />
+      <p id="desc"></p>
+    </section>
+
+    <!-- 자바스크립트 링크 -->
+    <script src="main.js"></script>
   </body>
 </html>

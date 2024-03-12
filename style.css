@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+ul {
+  /* ul 앞에 토글을 없애기 위해서 지정 */
+  /* circle , square 등 옵션 존재*/
+  list-style-type: none;
+}
+
+/* 특정 클래스 지정시 . 을 사용 */
+.navbar {
+  background-color: #3164d3;
+
+  /* 내부 글씨 색상 변경 */
+  color: #fff;
+  height: 60px;
+}
+
+.container {
+  max-width: 1100px;
+  /* 위아래 0 좌우 auto 로 외부의 간격을 이격 시킴 */
+  margin: 0 auto;
+
+  padding: 10px 30px;
+}
+
+.navbar .container {
+  /* 일열로 조정 */
+  display: flex;
+
+  flex-direction: row;
+
+  /* 사이에 이격 */
+  justify-content: space-between;
+
+  /* 태그의 세로 가운데 정렬 */
+  align-items: center;
+  /* 삐뚤지 않게 정확하게 가운데로 */
+  height: 100%;
+}
+
+.navbar .nav {
+  display: flex;
+  /* flex-direction: column; 위아래로 정렬 */
+  flex-direction: row;
+}
+
+.navbar .nav li {
+  /* 각 요소를 20px 간격으로 이격 */
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  /* 링크 밑줄 삭제 */
+  text-decoration: none;
+
+  /* default 는 16px */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  /* 마우스 올라갔을 때 효과 */
+  /* border-bottom: 1px #fff solid; */
+  color: #ddd;
+}
+
+.navbar .logo {
+  /* 로고 폰트 변경 */
+  font-size: x-large;
+  font-weight: bold;
+}
+
+button {
+  padding: 2px 4px;
+  margin: 2px 4px;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+button:hover {
+  color: red;
+  background-color: yellow;
+}
+
+.main {
+  color: #333;
+  line-height: 2;
+}
