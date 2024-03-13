@@ -1,5 +1,6 @@
 // 현재 화면에 떠있는 html 자체를 document라고 함
-document.getElementById('time').innerHTML = new Date().toLocaleString;
+
+document.getElementById('time').innerHTML = new Date();
 
 // 테마 변경 메서드
 function basic() {
