@@ -1,3 +1,38 @@
+/* 디폴트 정의 */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -10,6 +45,41 @@ body {
   color: #333;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
+  cursor: default;
+}
+
+/* 기본 태그 정의 */
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0px;
 }
 
 ul {
@@ -98,4 +168,45 @@ button:hover {
 .main {
   color: #333;
   line-height: 2;
+  padding: 40px;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid var(--color-blue);
+  background-color: var(--color-light-white);
+  float: left;
+}
+
+@media screen and (max-width: 780px) {
+  .home__avatar {
+    float: none; /* 화면 너비가 780px 이하일 때 float 속성 제거 */
+  }
+}
+
+.home__avatar:hover {
+  transform: rotate(-360deg) scale(1.1);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact {
+  width: 300px;
+  height: 80px;
+  /* font-size: 20px; */
+  line-height: 70px;
+  margin: auto;
+  /* color: var(--color-blue); */
+  border: 3px solid var(--color-black);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.contact:hover {
+  background-color: var(--color-orange);
+  transform: scale(1.1);
+  transition: all var(--animation-duration) ease-in;
 }
