@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹프로그래밍 데모</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -14,16 +15,24 @@
       <div class="container">
         <div class="logo">WebDemo</div>
 
+        <!-- 검색 부분 -->
+        <div class="search_area">
+          <form action="https://www.google.com/search" method="GET">
+            <input type="text" placeholder="Google search" name="q" />
+            <button type="submit"><i class="search"></i>검색</button>
+          </form>
+        </div>
+
         <!-- 네비게이션 요소 -->
         <ul class="nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
           <li>
             <a href="about.html">About</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="signup.html">SignUp</a>
           </li>
         </ul>
       </div>
@@ -66,9 +75,31 @@
         <hr />
         <br />
         <!-- <img src="/image/html5.jpg" alt=""> 이렇게 진행 안할 것이다.-->
-        <img id="fig" height="200px" />
+        <img class="skill_img" id="fig" height="100px" />
         <p id="desc"></p>
       </div>
+      <table class="table_test">
+        <thead>
+          <tr>
+            <th>분야</th>
+            <th>상세</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>프론트엔드</td>
+            <td>html,css,Vanilla JS, React, Angular, Vue.js, jQuery 등</td>
+          </tr>
+          <tr>
+            <td>백엔드</td>
+            <td>Django, Spring, Flask, Larave 등</td>
+          </tr>
+          <tr>
+            <td>데브옵스</td>
+            <td>aws, docker, Jenkins 등</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <!-- 자바스크립트 링크 -->
     <script src="main.js"></script>
