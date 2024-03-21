@@ -17,7 +17,7 @@ function forest() {
 function showhtml() {
   document.getElementById('fig').src = './image/html5.jpg';
   document.getElementById('desc').innerHTML =
-    '<b>HTML<b/>은 구조적 웹문서를 작성하는데 사용하는 마크업 언어입니다.';
+    '<b>HTML</b>은 구조적 웹문서를 작성하는데 사용하는 마크업 언어입니다.';
 }
 
 function showcss() {
@@ -33,6 +33,7 @@ function showjs() {
 }
 
 function hide() {
-  document.getElementById('fig').src = ' ';
-  document.getElementById('desc').innerHTML = ' ';
+  document.getElementById('fig').src = './image/w3.png';
+  document.getElementById('desc').innerHTML =
+    '<b>w3schools에서 더 자세히 학습해보세요 !</b> <a href="https://www.w3schools.com">CLICK</a>';
 }

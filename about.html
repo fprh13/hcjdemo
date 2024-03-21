@@ -6,20 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹프로그래밍 데모</title>
 
-    <!-- 폰트 -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -29,16 +15,24 @@
       <div class="container">
         <div class="logo">WebDemo</div>
 
+        <div class="search_area">
+          <form action="https://www.google.com/search" method="GET">
+            <input type="text" placeholder="Google search" name="q" />
+            <button type="submit"><i class="search"></i>검색</button>
+          </form>
+        </div>
+
         <!-- 네비게이션 요소 -->
         <ul class="nav">
           <li>
             <a href="index.html">Home</a>
           </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
+
           <li>
             <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="signup.html">SignUp</a>
           </li>
         </ul>
       </div>
